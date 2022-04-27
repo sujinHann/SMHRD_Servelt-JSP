@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--  
+		사용자가 서버프로그램으로 값을 보낼 수 있는 두 가지 방법
+		get : URL을 통해서 데이터 전달 / 보안 X / 보내는 데이터 크기에 제한 
+		URL(ISO-8859-1 -> euc-kr)
+		
+		post : 패킷을 토해서 데이터를 전달 / 보안강함  
+		보내는 데이터 크기에 제한이 없음 / get 방식보다 느림
+	
+	
+	-->
+	<h1>get 방식</h1>
+	<form action="ex05" method="get">
+		<input type="text" name="text"> 
+		<input type="submit" value="전송">
+	</form>
+
+	<h1>post 방식</h1>
+	<form action="ex05" method="post">
+		<input type="text" name="text"> 
+		<input type="submit" value="전송">
+	</form> 
+	
+	<h1>선택태그</h1>
+	<form action="ex05" method="post">
+	
+		<h3>고르기</h3>
+		1.명란파스타<input type="checkbox" name="choice" value="명란파스타">
+		2.쭉심<input type="checkbox" name="choice" value="쭉심">
+		3.삼겹살<input type="checkbox" name="choice" value="삼겹살">
+		<h3>디저트고르기</h3>
+		1.아이스크림<input type="radio" name="dessert" value="아이스크림">
+		2.크로플<input type="radio" name="dessert" value="크로플">
+		<input type="submit" value="전송">
+	</form>
+
+</body>
+</html>
