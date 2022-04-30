@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+		session.setAttribute("NewSession", "SujinHan");
+		//세션 데이터 생성
+	%>
+		<h1>세션생성</h1>
+
+</body>
+</html>
